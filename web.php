@@ -13,4 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/posts/{post}', 'PostsController@show');
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/about','AboutController@about');
+
+Route::get('/services','ServicesController@services');
+
+Route::get('/contact','ContactController@contact');
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
