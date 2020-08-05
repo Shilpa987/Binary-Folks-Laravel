@@ -23,6 +23,10 @@ Route::get('/services','ServicesController@services');
 
 Route::get('/contact','ContactController@contact');
 
+Route::get('/room','RoomsController@room');
+
+Route::get('/meal','MealsController@meal');
+
 
 
 
